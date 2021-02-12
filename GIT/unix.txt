@@ -1,0 +1,76 @@
+UNIX Commands:
+
+1.ls : Shows the list of the directories
+2.ls -R : Shows the subdirectories also 
+3.ls -al : show the detailed info of the file
+4.ls -a : listing of hidden files starts with '.'
+
+
+For File Manipulation:
+
+1.To create a file and enter in it :
+	cat > filename
+2.To view a file :
+	cat > sample1
+3.To concatinate two files:
+	cat sample1 sample2 > sample
+4.To Delete a file:
+	rm sample1
+5. To move a file:
+	 mv sample1 /Desktop
+6.To rename a file :
+	mv sample1 sample3
+7.To copy a file :
+	cp path path
+
+
+Directories Manipulation :
+
+1.Creating Directories :
+	mkdir training	
+2.To make multiple directories :
+	mkdir training1, training2 ,training3
+3.To make directory in different location 
+	mkdir training /Desktop/training
+4.To remove a directory:
+	rmdir training
+5.Renaming Directories 
+	mv training training1
+6.To print the Current directory:
+	pwd
+7.To change the directory :
+	cd Desktop
+8.To go to previous directory:
+	cd ..
+9.To go to root directory :
+	cd /
+
+
+Other important Commands:
+
+1.Manual of linux Os ,Similar to help:
+	man
+2.history : Gives the history of commands that are run.
+3.Shift + Insert : For pasting in terminal.
+
+File/Directory  permissions:
+
+r-Read only 
+w- Write only
+x- Execute Only 
+rw- Read and Write only
+rwx- Read ,write and execute.
+
+  Changing the permissions of file or directories:
+		chmod u+r Sample 1
+		chmod g=rwx Sample1
+		chmod o+w Sample1
+	Here :
+		u stands for owner.
+		g stands for group.
+		o stands for others.
+		a stands for world.
+
+
+
+

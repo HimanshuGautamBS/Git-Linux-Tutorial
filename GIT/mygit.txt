@@ -1,0 +1,112 @@
+   GIT Commands & Training
+
+1:  git init 
+    Initialized empty Git repository in /home/beryl-systems/Desktop/AllNighter/GIT/.git/
+
+
+2: git status (use to check the status of git)
+
+   On branch master
+   No commits yet
+   nothing to commit (create/copy files and use "git add" to track)
+
+
+3: git add mygit.txt (Ready to commit)
+   
+   FIle goes to Stagging area(where we approx. sure about our data that we have to push)
+
+
+4: git commit (Saving changes)
+
+   [master (root-commit) 72d032e] Initial Commit
+   1 file changed, 4 insertions(+)
+   create mode 100644 mygit.txt
+
+5: git commit -m"you can write msg here"
+
+6: git checkout -f    
+   This command use to remove the redundant changes of full project which made last time
+ 
+7: Git log
+   is a utility tool to review and read a history of everything that happens to a repository
+
+8: git log -p -1 (or any other number)
+   we can see specific no. of commit
+
+9: git diff
+   compare the working directory with stagging area
+
+
+10: git diff --staged
+    COmparing staging area with last commit
+
+
+11: git commit -a -m"skipped staging area and fixed<"
+
+
+12: REMOVING FILE  
+   
+    a)git rm --cached filename
+     => Remove file only from staging area
+   
+    b)git rm filename
+     =>Remove file completely
+
+13: GIT IGNORE
+	use .gitignore file	=> A gitignore file specifies intentionally untracked files that Git should ignore	
+
+
+14. GIT BRANCH
+
+a)git branch
+  * master
+   newBranch
+b) git checkout newBranch
+
+Switched to branch 'newBranch'
+
+c) git branch newbranch  <= creating a new branch
+
+d) git merge newBranch
+   Already up to date.
+
+e) git checkout -b flaskint
+	creating and checkout to new branch at the same time
+
+f) git branch 
+15:  GITHUB
+
+a)git remote add origin https://github.com/HimanshuGautamBS/Training.git
+
+b)git remote
+  origin
+
+c) git remote -v
+origin	https://github.com/HimanshuGautamBS/Training.git (fetch)
+origin	https://github.com/HimanshuGautamBS/Training.git (push)
+
+
+d)git push -u origin master  => push in master branch
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Everything up-to-date
+(with ssh key)
+
+e)git branch -d newbranch
+ Deleted branch newbranch (was e5fb380).
+ 
+**Changing config. of Git**
+
+ git config --global --list
+user.email=0agautam@gmail.com
+user.name=Ankit Gautam
+core.excludesfile=~/.gitignore_global
+credential.helper=cache
+
+git config --global user.name "Himanshu Gautam"
+               
+  ** **
+
+git branch -v
+* master    f5359f9 commit after changing configuration
+  newBranch e5fb380 new updated branch
+
