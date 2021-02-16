@@ -42,8 +42,6 @@ export default Demo;
 **//
 
 
-
-~JSX~
  
 React has it's own virtual Dom (html like element in react (java script in the form of XML))
 
@@ -55,3 +53,24 @@ props are immutable
 this.props. - class component
 props.      - functional component (have to pass props as arguments)
 
+
+     ****      PROMISE     ****
+     
+  	 let p= new Promise((resolve, reject ) =>{
+  	 let a=1+1
+  	 if(a==2){
+  	 	resolve('Success')
+  	 }
+  	 else{
+  	 	reject('Failed')
+  	 }
+  	 })
+
+  	 p.then((message)=>{
+  	 	console.log(' this is then ' + message)
+  	 }).catch((message)=>{
+  	 	console.log('This is in catch' + message)
+  	 })
+
+  console.log(p);
+     
