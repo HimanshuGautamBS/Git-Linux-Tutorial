@@ -78,6 +78,15 @@ handleSubmit(event) {
     // and use it to target the key on our `state` object with the same name, using bracket syntax
     this.setState({ [evt.target.name]: evt.target.value });
   }
+  
+  
+  **Defining Global variable in index.html file**
+        <script>
+          window.user=
+          {name:"hello",
+           password:"abc"}
+         </script>
+
 
 
 
