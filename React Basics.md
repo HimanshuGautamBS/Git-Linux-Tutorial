@@ -89,4 +89,8 @@ handleSubmit(event) {
 
 
 
+**Refs**
+Reafs provides a way to access DOM node or React elements created in the render method
 
+**When use Refs**
+Managin Focus ,Text Selection ,or Media Playback
